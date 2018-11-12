@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Name for the application [CHAR LIMIT=12] -->
+    <string name="app_name">Plants Inventory</string>
+
+    <string name="action_insert_plant_data">Insert Plant Data</string>
+
+    <!-- Label for overflow menu option that inserts fake plant data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Plants</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+    <string name="empty_view_subtitle_text">Get started by adding a plant</string>
+
+    <!-- Title for the activity to add a new plant [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_plant">Add a Plant</string>
+    <string name="editor_activity_title_edit_plant">Edit a Plant</string>
+
+    <!-- Label for editor menu option to save plant and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+    <!-- Label for editor overflow menu option that deletes the current plant [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Toast message in editor when new plant has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_plant_successful">A Plant saved</string>
+    <string name="editor_insert_plant_failed">Error with saving a plant</string>
+    <string name="editor_update_plant_successful">A Plant updated</string>
+    <string name="editor_update_plant_failed">Error with updating a plant</string>
+    <string name="editor_all_fields_required">all fields are required</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current plant [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current plant was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_plant_successful">A Plant deleted</string>
+    <string name="editor_delete_plant_failed">Error with deleting a plant</string>
+    <string name="delete_dialog_msg">Delete this plant?</string>
+    <string name="add_dummy_data_failed">add dummy data failed</string>
+    <string name="delete_total">rows deleted from plant database</string>
+    <string name="editor_all_fields_are_requied">all fields are required</string>
+    <string name="contact_error">number not found</string>
+    <string name="no_negative">negative number is not allowed</string>
+
+    <!-- total plant count -->
+    <string name="plant_sale">sale</string>
+    <string name="plant_sold">\u0020 sold</string>
+    <string name="plant_zero">has 0 left</string>
+    <string name="plant_count">total count</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current plant [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+    <!-- Dialog button text for the option to cancel deletion of the current plant [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_overview">Overview</string>
+    <string name="category_quantity">QUANTITY</string>
+    <string name="category_price">PRICE</string>
+    <string name="category_name">NAME</string>
+    <string name="contact_uri">tel:</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_plant_name">Name</string>
+    <string name="hint_plant_price">Price</string>
+    <string name="hint_plant_quantity">Quantity</string>
+    <string name="hint_plant_supplier">Supplier</string>
+    <string name="hint_plant_supplier_phone">Supplier Phone</string>
+
+    <!-- Label for supplier information in the editor [CHAR LIMIT=30] -->
+    <string name="category_supplier">Supplier:</string>
+    <string name="plant_id">ID:</string>
+    <string name="plant_name">Name:</string>
+    <string name="plant_price">Price:</string>
+    <string name="plant_quantity">Quantity:</string>
+    <string name="plant_supplier">Supplier:</string>
+    <string name="plant_supplier_phone">Supplier Phone:</string>
+
+    <!-- Units for weight of the plant (kilograms) [CHAR LIMIT=5] -->
+    <string name="price_unit">$</string>
+
+    <!-- SUPPLIER LIST -->
+    <string name="supplier_unknown">unknown supplier</string>
+    <string name="supplier1">My City Plants</string>
+    <string name="supplier2">White Flower Farm</string>
+    <string name="supplier3">Fast Growing Trees</string>
+    <string name="supplier4">ProFlowers</string>
+
+    <!-- Label for the plant's breed if the breed is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_price">Unknown price</string>
+    <string name="unknown_plant_name">unknown plant name</string>
+
+    <!-- dummy data plant1 -->
+    <string name="plant1_name">White Bird of Paradise</string>
+    <string name="plant1_price">21.95</string>
+    <string name="plant1_quantity">7</string>
+    <string name="plant1_supplier">My City Plants</string>
+    <string name="plant1_supplierPhone">479&#8211;273&#8211;6463</string>
+
+
+    <!-- dummy data plant2 -->
+    <string name="plant2_name">ZZ Plant</string>
+    <string name="plant2_price">44.96</string>
+    <string name="plant2_quantity">10</string>
+    <string name="plant2_supplier">Fast Growing Trees</string>
+    <string name="plant2_supplierPhone">786&#8211;425&#8211;5241</string>
+
+    <!-- plantProvider warnings -->
+    <string name="unknown_query_uri">Cannot query unknown URI</string>
+    <string name="insertion_not_supported">insertion is not supported</string>
+    <string name="requires_name">the plant requires a name</string>
+    <string name="requires_price">the plant requires valid price</string>
+    <string name="requires_quantity">the plant requires valid quantity</string>
+    <string name="requires_supplier">the plant requires a supplier</string>
+    <string name="requires_supplier_phone">the plant requires a supplier phone</string>
+
+</resources>

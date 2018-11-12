@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/plant_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/action_insert_plant_data"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/plant_name" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_plant_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_plant_name"
+                android:inputType="textCapWords" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- PRICE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/plant_price" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+
+            <!-- FILL field -->
+            <EditText
+                android:id="@+id/edit_plant_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_plant_price"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- QUANTITY -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/plant_quantity" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/edit_plant_quantity_btn_minus"
+                style="@style/QuantityButtonStyle"
+                android:layout_width="40dp"
+                android:src="@drawable/ic_minus" />
+
+            <EditText
+                android:id="@+id/edit_plant_quantity"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/edit_plant_quantity_btn_add"
+                style="@style/QuantityButtonStyle"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- SUPPLIER NAME SPINNER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/plant_supplier" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/edit_plant_supplier"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_plant_supplier"
+               android:inputType="textCapWords" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- SUPPLIER PHONE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/plant_supplier_phone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/edit_plant_supplier_phone"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_plant_supplier_phone"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textAlignment="center"
+        android:text="@string/editor_all_fields_are_requied"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/contact_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:text="Contact Supplier"/>
+
+
+</LinearLayout>
